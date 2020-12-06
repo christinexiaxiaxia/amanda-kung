@@ -1,0 +1,149 @@
+/*@font-face {
+	font-family: "Apfel";
+	font-style: normal;
+	src: url("../fonts/ApfelGrotezk-Regular.woff") format("woff"),
+		 url("../fonts/ApfelGrotezk-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Apfel Brukt";
+	font-style: normal;
+	src: url("../fonts/ApfelGrotezk-RegularBrukt.woff") format("woff"),
+		 url("../fonts/ApfelGrotezk-RegularBrukt.woff2") format("woff2");
+}*/
+
+@font-face {
+	font-family: "Apfel";
+	font-style: normal;
+	src: url("../fonts/NeueMontreal-Regular.otf") format("opentype")
+}
+
+
+/*STRUCTURE*/
+
+* {
+	font-family: "Apfel",sans-serif;
+	font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(223,226,29);
+}
+
+::-moz-selection {
+  color: rgba(0,0,0,1);
+  background-color: rgb(223,226,29);
+}
+::selection {
+  color: rgba(0,0,0,1);
+  background-color: rgb(223,226,29);
+}
+
+
+.column {
+	position: fixed;
+	height: calc(100vh - 4rem);
+	top: 0;
+	padding: 2rem;
+
+	overflow: auto;
+}
+
+.column.left {
+	left: 0;
+	width: calc(30vw - 4rem);
+
+	/*background: red;*/
+}
+
+.column.right {
+	right: 0;
+	width: calc(70vw - 4rem);
+
+	/*background: yellow;*/
+}
+
+
+/* MENU */
+
+.page-title {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+
+	user-select: none;
+}
+
+.page-title:hover {
+	font-family: serif;
+	font-style: italic;
+	font-size: 1.1rem;
+	letter-spacing: 0;
+	
+	cursor: default;
+}
+
+.menu-link {
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-bottom: 0.5rem;
+	
+	/*transition-duration: 0.3s;*/
+}
+
+.menu-link:hover {
+	font-family: serif;
+	font-style: italic;
+	font-size: 1.1rem;
+	letter-spacing: 0;
+
+	cursor: pointer;
+	/*transition-duration: 0.3s;*/
+}
+
+.menu-link.sub {
+	/*display: none;*/
+}
+
+
+/* TYPOGRAPHY */
+
+p {
+	margin: 0rem 0rem 1rem 0rem;
+	letter-spacing: 0.04rem;
+}
+
+.works.header,
+.works.date,
+.works.media {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+
+	text-align: center;
+}
+
+.works.media {
+	margin-bottom: 1.5rem;
+}
+
+
+/* IMAGES */
+
+img {
+	display: block;
+	width: 50%;
+	margin: auto;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+
+iframe {
+	width: 100%;
+	height: 25vw;
+	margin: 0rem 0rem 1rem 0rem;
+}
