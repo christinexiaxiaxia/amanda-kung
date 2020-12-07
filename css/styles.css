@@ -127,8 +127,11 @@
 	font-style: italic;
 }
 
-.menu-link.sub {
-	/*display: none;*/
+.menu-link.photos.main,
+.menu-link.about {
+	color: rgb(170,170,170);
+
+	text-decoration: none;
 }
 
 
@@ -137,14 +140,17 @@
 
 /* TYPOGRAPHY */
 
-p,
-a {
+p {
 	margin: 0rem 0rem 1rem 0rem;
 	letter-spacing: 0.04rem;
 
-	text-decoration: none;
+	color: black;
+}
 
+a {
 	color: rgb(170,170,170);
+
+	text-decoration: none;
 }
 
 a:hover {
