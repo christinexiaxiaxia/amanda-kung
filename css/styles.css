@@ -24,6 +24,8 @@
 * {
 	font-family: "Apfel",sans-serif;
 	font-size: 16px;
+
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -32,7 +34,7 @@
     background-color: white;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(223,226,29);
+  background-color: rgb(170,170,170);
 }
 
 ::-moz-selection {
@@ -68,12 +70,22 @@
 	/*background: yellow;*/
 }
 
+.content {
+	padding-top: 4rem;
+	padding-bottom: 24rem;
+}
+
+
+
+
 
 /* MENU */
 
 .page-title {
 	font-size: 1rem;
 	margin-bottom: 1rem;
+
+	color: black;
 
 	user-select: none;
 }
@@ -83,26 +95,36 @@
 	font-style: italic;
 	font-size: 1.1rem;
 	letter-spacing: 0;
-	
+
 	cursor: default;
 }
 
 .menu-link {
 	font-size: 1rem;
-	line-height: 1rem;
-	margin-bottom: 0.5rem;
+	line-height: 1.2rem;
+	margin-bottom: 1rem;
 	
 	/*transition-duration: 0.3s;*/
 }
 
 .menu-link:hover {
-	font-family: serif;
-	font-style: italic;
-	font-size: 1.1rem;
-	letter-spacing: 0;
+	color: black;
 
 	cursor: pointer;
 	/*transition-duration: 0.3s;*/
+}
+
+.menu-link.works.main,
+.menu-link.photos.main {
+	cursor: default;
+}
+
+.menu-link.works.main,
+.menu-link.works.one {
+	color: black;
+}
+.menu-link.works.one {
+	font-style: italic;
 }
 
 .menu-link.sub {
@@ -110,11 +132,23 @@
 }
 
 
+
+
+
 /* TYPOGRAPHY */
 
-p {
+p,
+a {
 	margin: 0rem 0rem 1rem 0rem;
 	letter-spacing: 0.04rem;
+
+	text-decoration: none;
+
+	color: rgb(170,170,170);
+}
+
+a:hover {
+	color: black;
 }
 
 .works.header,
@@ -130,6 +164,10 @@ p {
 	margin-bottom: 1.5rem;
 }
 
+.works.one {
+	color: black;
+}
+
 
 /* IMAGES */
 
@@ -137,8 +175,8 @@ img {
 	display: block;
 	width: 50%;
 	margin: auto;
-	margin-top: 1rem;
-	margin-bottom: 2rem;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
 }
 
 
